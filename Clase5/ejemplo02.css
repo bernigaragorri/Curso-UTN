@@ -1,0 +1,12 @@
+/* font-family: 'Pacifico', cursive;
+font-family: 'PT Sans Narrow', sans-serif; */
+
+h2{
+        color: red;
+        font-family: 'PT Sans Narrow', sans-serif;
+}
+
+p{
+    color: blue;
+    font-family: 'Pacifico', cursive;
+}
