@@ -1,0 +1,12 @@
+.caja{
+    width: 400px;
+    width: 250px;
+    background-color: aqua;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    /* transform: rotate(-90deg); */
+    transform: scale(0.7); /* 1.0 es el 100%*/
+}
