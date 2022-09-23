@@ -156,6 +156,9 @@ footer{
     border-radius: 10px;
     margin: 16px 0;
     padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .info h4{
@@ -165,4 +168,43 @@ footer{
     font-style: italic;
     border-bottom: 1px solid #2e64a1;
     padding-bottom: 5px;
+}
+
+.servicio img{
+    /* max-width: 225px;
+    display: block; */
+    border-radius: 20px;
+}
+
+.servicio:nth-child(even){   /*hijos pares*/
+    flex-direction: row-reverse;
+}
+
+.contacto{
+    display: flex;
+}
+
+.contacto section{
+    width: 100%;
+}
+
+.datos{
+    font-size: 14px;
+}
+
+.datos ul li{
+    font-size: 10px;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label{
+    min-width: 100px;
+}
+
+.formulario p input, .formulario p textarea{
+    background-color: orange;
+    width: 100%;
 }
