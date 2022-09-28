@@ -1,0 +1,297 @@
+/* font-family: 'PT Sans Narrow', sans-serif; */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background-color: rgb(52, 100, 190);
+}
+
+header div img{
+    width: 100px;
+    padding-top: 20px;
+}
+
+h1{
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+}
+
+nav{
+    background-color: rgb(146, 199, 240);
+    margin-bottom: 20px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    flex-grow: 1;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+    background-color: #4c76a5;
+}
+
+nav ul li a.activo{
+    background-color: #4c76a5; 
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.homeimg img{
+    max-width: 100%;
+}
+
+.columnas{
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 20px;
+}
+
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+}
+
+.testimonios{
+    width: 25%;
+    margin-bottom: 5px;    
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding: 16px;
+}
+
+.testimonio .cita{
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+}
+
+
+.testimonio .autor{
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+}
+
+footer{
+    background-color: rgb(214, 208, 208);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.historia p{
+    font-size: 13px;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.persona img{
+    border-radius: 50%;
+    max-width: 65%;
+    box-shadow: 0 0 5px gray;
+    margin:13px 0 16px;
+}
+
+.persona h5, .persona h6{
+    color: #2e64a1;
+    font-weight: normal;
+    margin: 0;
+}
+
+.persona h5{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.persona h6{
+    font-style: italic;
+}
+
+.persona p{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.servicio{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 16px 0;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.info h4{
+    color: #2e64a1;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 5px;
+}
+
+.servicio img{
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.servicio:nth-child(even){   /*hijos pares*/
+    flex-direction: row-reverse;
+}
+
+.contacto{
+    display: flex;
+}
+
+.contacto section{
+    width: 100%;
+}
+
+.datos{
+    font-size: 14px;
+}
+
+.datos ul li{
+    font-size: 10px;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label{
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.formulario p input, .formulario p textarea{
+    background-color: orange;
+    width: 70%;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px;
+}
+
+.formulario textarea{
+    resize: none;
+    height: 150px;
+}
+
+.formulario p:nth-child(4){
+    align-items: flex-start;
+}
+
+.formulario input[type="submit"]{
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px gray;
+    color: white;
+    font-size: 16px;
+    width: auto;
+    margin-left: 80px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    /* position: relative;
+    left: 80px; */
+}
+
+.formulario input[type="submit"] :hover{
+    background-color: #2e64a1;
+}
+
+
+@media screen and (max-width:550px) {
+    .columnas{
+        flex-direction: column;
+    }
+
+    .bienvenidos, .testimonios{
+        width: 100%;
+    }
+
+    .testimonios{
+        display: none;
+    }
+
+    .holder{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    main .holder{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .personas{
+        flex-wrap: wrap;
+    }
+
+    .persona{
+        width: 47%;
+        margin-bottom: 10px;
+    }
+
+    .servicio, .servicio:nth-child(even){
+        flex-direction: column;
+    }
+
+    .servicio img{
+        width: 70%;
+        /* max-width: 100%; */
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+    
+}
