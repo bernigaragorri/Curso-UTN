@@ -1,5 +1,7 @@
 /* font-family: 'PT Sans Narrow', sans-serif; */
 
+/* INDEX*/
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -111,6 +113,8 @@ footer{
     padding: 40px 0;
 }
 
+/*NOSOTROS*/
+
 .historia p{
     font-size: 13px;
 }
@@ -157,6 +161,8 @@ footer{
     line-height: 16px;
 }
 
+/*SERVICIOS*/
+
 .servicio{
     border: 2px solid black;
     border-radius: 10px;
@@ -186,6 +192,27 @@ footer{
     flex-direction: row-reverse;
 }
 
+/*GALERIA*/
+
+.subtitulo{
+    text-align: center;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria img{
+    width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+/*CONTACTO*/
+
 .contacto{
     display: flex;
 }
@@ -199,7 +226,14 @@ footer{
 }
 
 .datos ul li{
-    font-size: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.datos ul li a{
+    text-decoration: none;
+    color: #2e64a1;
+    
 }
 
 .formulario p {
@@ -247,7 +281,6 @@ footer{
 .formulario input[type="submit"] :hover{
     background-color: #2e64a1;
 }
-
 
 @media screen and (max-width:550px) {
     .columnas{
