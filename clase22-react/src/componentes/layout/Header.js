@@ -1,8 +1,7 @@
-const Header = (props) =>{
+const Header = (props) => {
     return(
         <header>
-            <p>Hola soy el Header</p>
-            <p>dsknfljdsafnlsnflksaklgfdklgfdgmkdfgmld</p>
+            <h1>EJEMPLOS EN REACT</h1>
         </header>
     )
 }
