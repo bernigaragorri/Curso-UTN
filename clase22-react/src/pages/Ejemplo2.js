@@ -1,6 +1,14 @@
+import { Ejemplo1Estado, Ejemplo2Estado } from "../componentes/estado/Estados";
+import '../styles/estilos.css'
+
 const Ejemplo2 = props => {
     return(
-        <div>hola soy el ejemplo 2</div>
+        <div>
+            <h1>Ejemplos Estados</h1>
+            <Ejemplo1Estado/>
+            <hr/>
+            <Ejemplo2Estado/>
+        </div>
     )
 }
 
