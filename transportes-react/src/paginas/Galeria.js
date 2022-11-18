@@ -1,6 +1,8 @@
 const Galeria = (props) => {
     return (
-        <div>hola soy la pagina de Galeria</div>
+        <div>
+            <p>Pagina en construccion</p>
+        </div>
     )
 }
 

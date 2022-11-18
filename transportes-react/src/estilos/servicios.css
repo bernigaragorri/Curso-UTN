@@ -1,0 +1,33 @@
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.servicio{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 16px 0;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.info h4{
+    color: #2e64a1;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 5px;
+}
+
+.servicio img{
+    max-width: 225px;
+    display: block;
+    border-radius: 20px;
+}
+
+.servicio:nth-child(even){   /*hijos pares*/
+    flex-direction: row-reverse;
+}
